@@ -32,7 +32,7 @@ export default function ShareScreen() {
         ? `私の今年の運勢は「${fortune.title}」です！\n${fortune.rank}\n${fortune.description}\n#運命の診断`
         : ""
 
-    const shareUrl = "https://your-app-url.com" // アプリのURLに置き換えてください
+    const shareUrl = "https://fortune-app-omega.vercel.app/" // アプリのURLに置き換えてください
 
     const shareToTwitter = () => {
         window.open(

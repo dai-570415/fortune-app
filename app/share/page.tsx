@@ -60,12 +60,8 @@ export default function ShareScreen() {
                 <h2 className="text-2xl font-bold mb-4 text-purple-600">結果をシェア</h2>
                 <p className="text-black mb-6">{shareText}</p>
                 <div className="flex justify-center space-x-4 mb-6">
-                    <button onClick={shareToTwitter} className="bg-blue-400 text-white px-4 py-2 rounded-full">
-                        X（Twitter）
-                    </button>
-                    <button onClick={shareToInstagram} className="bg-pink-500 text-white px-4 py-2 rounded-full">
-                        Instagram
-                    </button>
+                    <button onClick={shareToTwitter} className="text-center bg-blue-400 text-white px-4 py-2 rounded-full">X（Twitter）</button>
+                    <button onClick={shareToInstagram} className="text-center bg-pink-500 text-white px-4 py-2 rounded-full">Instagram</button>
                 </div>
                 <Link href="/" className="text-black mb-6 underline">また来年引くことができます</Link>
             </motion.div>

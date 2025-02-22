@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +16,9 @@
 }
 
 body {
+  font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
   color: var(--foreground);
   background: var(--background);
 }

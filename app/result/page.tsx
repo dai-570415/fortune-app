@@ -34,12 +34,12 @@ export default function ResultScreen() {
     if (!fortune) return null
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-indigo-500 to-purple-600 p-4">
+        <div className="flex flex-col items-center justify-center min-h-screen">
             <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-white rounded-lg p-8 text-center max-w-md w-full"
+                className="bg-white rounded-lg p-16 text-center max-w-md w-full"
             >
                 <h2 className="text-3xl font-bold mb-4 text-purple-600">{fortune.title}</h2>
                 <p className="text-5xl mb-4">{fortune.rank}</p>

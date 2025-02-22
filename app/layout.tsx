@@ -1,9 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Zen_Old_Mincho } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const zenOldMincho = Zen_Old_Mincho({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-zen-old-mincho',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "1年に1回しか引けない運命の診断!",
@@ -17,8 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <body className={zenOldMincho.className}>{children}</body>
     </html>
   )
 }
-

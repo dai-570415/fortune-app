@@ -23,15 +23,23 @@ export default function MainScreen() {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-indigo-500 to-purple-600">
+        <div className="flex flex-col items-center justify-center min-h-screen">
             <motion.h1
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="text-4xl font-bold text-white mb-8"
             >
-                占いは一度きり！
+                占いは一度きり
             </motion.h1>
+            <motion.h2
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-center text-1xl font-bold text-white mb-8"
+            >
+                一度引くと来年まで引けません。<br />今年の運勢を占いますか？
+            </motion.h2>
             <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

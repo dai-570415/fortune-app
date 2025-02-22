@@ -50,12 +50,12 @@ export default function ShareScreen() {
     if (!fortune) return null
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-indigo-500 to-purple-600 p-4">
+        <div className="flex flex-col items-center justify-center min-h-screen">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="bg-white rounded-lg p-8 text-center max-w-md w-full"
+                className="bg-white rounded-lg p-16 text-center max-w-md w-full"
             >
                 <h2 className="text-2xl font-bold mb-4 text-purple-600">結果をシェア</h2>
                 <p className="text-black mb-6">{shareText}</p>
@@ -67,7 +67,7 @@ export default function ShareScreen() {
                         Instagram
                     </button>
                 </div>
-                <Link href="/" className="text-black mb-6 text-purple-600">また来年引くことができます</Link>
+                <Link href="/" className="text-black mb-6 underline">また来年引くことができます</Link>
             </motion.div>
         </div>
     )

@@ -8,7 +8,7 @@ export default function SplashScreen() {
   const [showLink, setShowLink] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLink(true), 500)
+    const timer = setTimeout(() => setShowLink(true), 2000)
     return () => clearTimeout(timer)
   }, [])
 
